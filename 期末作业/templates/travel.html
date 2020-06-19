@@ -1,0 +1,160 @@
+<DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:th="http://www.thymeleaf.org"
+          xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Winky的爱好">
+        <meta name="author" content="Winky">
+    
+        <title>Winky的爱好</title>
+    
+        <link href="../static/css/style.css" rel="stylesheet">
+        
+      </head>
+    
+      <body>
+    
+        <section id="container" >
+          <!--header-->
+          <header class="black-bg">
+                <div class="header_bar">
+                    <img src="../static/images/bar.png" class="header_img">
+                    <a href="./index.html" class="header_text"><span>Winky's Personal space</span></a>
+                </div>
+          </header>
+    
+        <!--main content-->
+                    <div class="wrapper" id="container-1">
+                        <div class="inner">
+                            <div class="cont_1">
+                                <div class="cont_1-b">
+                                    <div class="cont_1-b-1">
+                                        <!--sidebar-->
+                                        <aside>
+                                            <div id="sidebar">
+                                                <!-- sidebar menu start-->
+                                                <ul class="sidebar-menu">
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./resume.html" >
+                                                                <img src="../static/images/resume.png" class="subimg">
+                                                                <span class="sub_span"><b>W planet</b></span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+    
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./interest.html" >
+                                                                <img src="../static/images/planet1.png" class="subimg">
+                                                                <span class="sub_span"><b>W Interests</b></span>
+                                                            </a>
+                                                        </div>
+    
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./Oneday.html">
+                                                                <img src="../static/images/planet2.png" class="subimg">
+                                                                <span class="sub_span"><b>W Oneday</b></span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+    
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./GNotes.html" >
+                                                                <img src="../static/images/planet3.png" class="subimg">
+                                                                <span class="sub_span"><b>W GNotes</b></span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                    <div class="cont_1-b-2">
+                                        <button class="returnbtn">
+                                            <a href="./interest.html">
+                                                <img src="../static/images/fanhui.png" alt="返回">
+                                            </a>
+                                        </button>
+                                        <div class="table_container">
+                                            <div>
+                                                <strong class="title">Winky的足迹</strong>
+                                            </div>
+                                            <div class="cook_list" >
+                                                <div class="travel_item">
+                                                    <div class="co_face">
+                                                        <img src="../static/images/face.jpg" class="face_img">
+                                                    </div>
+                                                    <ul class="co_ul">
+                                                        <li class="co_name"><strong >Winkyyy98</strong></li>
+                                                        <li class="co_time">2020-05-21 14：03：56</li>
+                                                        <li class="co_info">521春游鸭</li>
+                                                        <li class="co_info">p1 人们都在说可爱的黑天鹅，我却只能想到黑天鹅的外卖小哥</li>
+                                                        <li class="co_info">p2 路边的小花，洁白而充满生命力</li>
+                                                        <li class="travel_pic">
+                                                            <img src="../static/images/blackswan.jpg" class="co_img">
+                                                            <img src="../static/images/flower.jpg" class="co_img">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="travel_item">
+                                                    <div class="co_face">
+                                                        <img src="../static/images/face.jpg" class="face_img">
+                                                    </div>
+                                                    <ul class="co_ul">
+                                                        <li class="co_name"><strong >Winkyyy98</strong></li>
+                                                        <li class="co_time">2019-12-28 09：23：11</li>
+                                                        <li class="co_info">来一场说走就走的旅行</li>
+                                                        <li class="co_info">p1 到地铁站啦，前往机场等待中，冬天真是养膘的时候，那时候好胖啊，真是对得起我吃下的每一口肉</li>
+                                                        <li class="co_info">p2 坐上飞机啦，天朗气清</li>
+                                                        <li class="co_info">p3 天都黑了才走到目的地，还好我穿了羽绒服，不然得冷死我，不过也挺好，独自旅行就是感受意外里的小美好</li>
+                                                        <li class="travel_pic">
+                                                            <img src="../static/images/ready.jpg" class="co_img">
+                                                            <img src="../static/images/flying.jpg" class="co_img">
+                                                            <img src="../static/images/travel.jpg" class="co_img">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="travel_item">
+                                                    <div class="co_face">
+                                                        <img src="../static/images/face.jpg" class="face_img">
+                                                    </div>
+                                                    <ul class="co_ul">
+                                                        <li class="co_name"><strong >Winkyyy98</strong></li>
+                                                        <li class="co_time">2014-07-28 10：26：39</li>
+                                                        <li class="co_info">踏入地狱前最后的狂欢</li>
+                                                        <li class="co_info">p1 雕像同款 get!</li>
+                                                        <li class="co_info">p2 盛夏的海边，海风扑面（嗐，不会游泳只能站在海边感受）</li>
+                                                        <li class="travel_pic">
+                                                            <img src="../static/images/Amusepark.jpg" class="co_img">
+                                                            <img src="../static/images/sunsea.jpg" class="co_img">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    
+        <footer id="footer">
+            <div class="container">
+                <div class="row_item">
+                    <div class="footer-info">
+                        <p>我说今晚月光那么美</p>
+                        <p>© Winky's Personal space</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+     </body>
+    </html>
+    

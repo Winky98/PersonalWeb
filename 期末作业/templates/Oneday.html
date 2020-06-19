@@ -1,0 +1,183 @@
+<DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:th="http://www.thymeleaf.org"
+          xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Winky的一天">
+        <meta name="author" content="Winky">
+    
+        <title>Winky的一天</title>
+    
+        <link href="../static/css/style.css" rel="stylesheet">
+        
+      </head>
+    
+      <body>
+    
+      <section id="container" >
+          <!--header-->
+          <header class="black-bg">
+                <div class="header_bar">
+                    <img src="../static/images/bar.png" class="header_img">
+                    <a href="./index.html" class="header_text"><span>Winky's Personal space</span></a>
+                </div>
+          </header>
+    
+        <!--main content-->
+                    <div class="wrapper" id="container-1">
+                        <div class="inner">
+                            <div class="cont_1">
+                                <div class="cont_1-b">
+                                    <div class="cont_1-b-1">
+                                        <!--sidebar-->
+                                        <aside>
+                                            <div id="sidebar">
+                                                <!-- sidebar menu start-->
+                                                <ul class="sidebar-menu">
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./resume.html" >
+                                                                <img src="../static/images/resume.png" class="subimg">
+                                                                <span class="sub_span"><b>W planet</b></span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+    
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./interest.html" >
+                                                                <img src="../static/images/planet1.png" class="subimg">
+                                                                <span class="sub_span"><b>W Interests</b></span>
+                                                            </a>
+                                                        </div>
+    
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./Oneday.html" >
+                                                                <img src="../static/images/planet2.png" class="subimg">
+                                                                <span class="sub_span"><b>W Oneday</b></span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+    
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./GNotes.html" >
+                                                                <img src="../static/images/planet3.png" class="subimg">
+                                                                <span class="sub_span"><b>W GNotes</b></span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                    <div class="cont_1-b-2">
+                                        <div class="table_container">
+                                            <div id="table_content" > 
+                                                <table class="restable">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="restitle" colspan="2">
+                                                            <strong class="title">Winky的每日行程表</strong>
+                                                            </td>
+                                                        </tr>
+                            
+                                                        <tr>
+                                                        <td class="dayleftd" style="font-weight: 900; font-size: larger;">时间</td>
+                                                        <td class="dayrightd" style="font-weight:900; font-size: larger;">行程</td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <td class="dayleftd" >6：50</td>
+                                                            <td class="dayrightd">起床</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >7：00-7：20</td>
+                                                            <td class="dayrightd" >洗漱、收拾</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >7：20-8：10</td>
+                                                            <td class="dayrightd" >出门锻炼，若下雨则改为室内瑜伽</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >8：30-9：10</td>
+                                                            <td class="dayrightd" >洗澡，收拾脏衣服扔到洗衣机</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >9：20-9：40</td>
+                                                            <td class="dayrightd" >吃早饭</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >10：00-13：00</td>
+                                                            <td class="dayrightd" >学习，根据ddl按顺序完成任务</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >13：00-13：30</td>
+                                                            <td class="dayrightd" >吃午饭</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >14：00-14：50</td>
+                                                            <td class="dayrightd" ><strong>午睡</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >14：50-15：30</td>
+                                                            <td class="dayrightd" >洗漱、下午茶</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >15：30-18：00</td>
+                                                            <td class="dayrightd" >学习，根据ddl按顺序完成任务</td>
+                                                        </tr><tr>
+                                                            <td class="dayleftd" >18：00-18：20</td>
+                                                            <td class="dayrightd" >吃晚饭</td>
+                                                        </tr><tr>
+                                                            <td class="dayleftd" >18：20-19：00</td>
+                                                            <td class="dayrightd" >陪妈妈饭后散步闲聊</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >19：00-21：30</td>
+                                                            <td class="dayrightd" >学习，根据ddl按顺序完成任务</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >21：30-22：50</td>
+                                                            <td class="dayrightd" >相声/刷微博/追剧/看小说</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="dayleftd" >22：50-23：20</td>
+                                                            <td class="dayrightd" >洗漱、睡觉</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+    
+                                                <table class="restable">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="dayleftd" style="width: 10%；">备注</td>
+                                                            <td class="dayrightd" colspan="2" style="width: 90%">清晨起来，拥抱太阳，美好的一天从微笑开始！</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row_item">
+                    <div class="footer-info">
+                        <p>我说今晚月光那么美</p>
+                        <p>© Winky's Personal space</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </body>
+    </html>
+    

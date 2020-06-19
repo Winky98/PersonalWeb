@@ -1,0 +1,168 @@
+<DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Winky的简介">
+    <meta name="author" content="Winky">
+
+    <title>Winky的简介</title>
+
+    <link href="../static/css/style.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <!--header-->
+      <header class="black-bg">
+            <div class="header_bar">
+                <img src="../static/images/bar.png" class="header_img">
+                <a href="./index.html" class="header_text"><span>Winky's Personal space</span></a>
+            </div>
+      </header>
+
+    <!--main content-->
+                <div class="wrapper" id="container-1">
+                    <div class="inner">
+                        <div class="cont_1">
+                            <div class="cont_1-b">
+                                <div class="cont_1-b-1">
+                                    <!--sidebar-->
+                                    <aside>
+                                        <div id="sidebar">
+                                            <!-- sidebar menu start-->
+                                            <ul class="sidebar-menu">
+                                                <li class="sub">
+                                                    <div class="bar_item">
+                                                        <a href="./resume.html" >
+                                                            <img src="../static/images/resume.png" class="subimg">
+                                                            <span class="sub_span"><b>W planet</b></span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="sub">
+                                                    <div class="bar_item">
+                                                        <a href="./interest.html" >
+                                                            <img src="../static/images/planet1.png" class="subimg">
+                                                            <span class="sub_span"><b>W Interests</b></span>
+                                                        </a>
+                                                    </div>
+
+                                                <li class="sub">
+                                                    <div class="bar_item">
+                                                        <a href="./Oneday.html" >
+                                                            <img src="../static/images/planet2.png" class="subimg">
+                                                            <span class="sub_span"><b>W Oneday</b></span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+
+                                                <li class="sub">
+                                                    <div class="bar_item">
+                                                        <a href="./GNotes.html" >
+                                                            <img src="../static/images/planet3.png" class="subimg">
+                                                            <span class="sub_span"><b>W GNotes</b></span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </aside>
+                                </div>
+                                <div class="cont_1-b-2">
+                                    <div class="table_container">
+                                        <div id="table_content" > 
+                                            <table class="restable">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="restitle" colspan="4">
+                                                        <strong class="title">简历</strong>
+                                                        </td>
+                                                    </tr>
+                        
+                                                    <tr>
+                                                        <td class="resuptd" >姓名：庄文琪</td>
+                                                        <td class="resuptd" >性别：女</td>
+                                                        <td class="resuptd" >年龄：21</td>
+                                                        <td class="resuptd" style="width: 13%;border-bottom: #fff;" rowspan="3">
+                                                            <img src="../static/images/photo.jpg" alt="证件照">
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="resuptd" >出生年月：1998.12</td>
+                                                        <td class="resuptd" >籍贯：山东青岛</td>
+                                                        <td class="resuptd" >民族：汉</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="resuptd" >专业：信息管理与信息系统</td>
+                                                        <td class="resuptd" >班级：信管1702</td>
+                                                        <td class="resuptd" >职位：心理委员</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table class="restable">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="restdtit">曾获奖项</td>
+                                                        <td class="restd">
+                                                            &nbsp;&nbsp;校级舞蹈大赛三等奖<br>
+                                                            &nbsp;&nbsp;校级文明寝室<br>
+                                                            &nbsp;&nbsp;英语四级
+                                                            &nbsp;&nbsp;普通话二级甲等<br>
+                                                            &nbsp;&nbsp;两次优秀学生奖学金<br>
+                                                            &nbsp;&nbsp;三好学生
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="restdtit">特长</td>
+                                                        <td class="restd">
+                                                            &nbsp;&nbsp; 舞蹈（jazz，urban, 拉丁）<br>
+                                                            &nbsp;&nbsp; 编程（前端，后端，数据库）<br>
+                                                            &nbsp;&nbsp; 溜冰<br>
+                                                            &nbsp;&nbsp; 中短跑<br>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="restdtit">
+                                                            <a href="./interest.html">爱好</a>
+                                                            </td>
+                                                        <td class="restd">
+                                                            <a href="./Star.html">追星</a>、
+                                                            <a href="./AxiangS.html">相声</a>、
+                                                            <a href="./travel.html">旅游</a>、
+                                                            <a href="./cook.html">做饭</a>、
+                                                            <a href="./EA.html">追剧（欧美）</a>、
+                                                            <a href="./money.html">钱</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <footer id="footer">
+                <div class="container">
+                    <div class="row_item">
+                        <div class="footer-info">
+                            <p>我说今晚月光那么美</p>
+                            <p>© Winky's Personal space</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+         </body>
+        </html>
