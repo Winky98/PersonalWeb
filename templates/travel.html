@@ -16,12 +16,12 @@
     
       <body>
     
-      <section id="container" >
+        <section id="container" >
           <!--header-->
           <header class="black-bg">
                 <div class="header_bar">
                     <img src="../static/images/bar.png" class="header_img">
-                    <a href="./index.html" class="header_text"><span>Winky's Personal space</span></a>
+                    <a href="../index.html" class="header_text"><span>Winky's Personal space</span></a>
                 </div>
           </header>
     
@@ -82,27 +82,60 @@
                                         </button>
                                         <div class="table_container">
                                             <div>
-                                                <strong class="title">20180204《八队小封箱开场》</strong>
+                                                <strong class="title">Winky的足迹</strong>
                                             </div>
-                                            
-                                            <!--video视频(mp4或webm格式) audio 音频(mp3格式) 用法基本一致
-                                            布尔属性：要么不写，写的话取值只能是属性本身controls:控制控件的显示，取值只能为controls,也可以不写取值
-                                            autoplay进入网页自动播放 muted静音播放 loop循环播放-->
-                                            <video autoplay muted loop  src="../static/video/20180204《八队小封箱开场》.mp4" controls="controls">
-                                            </video>
-                                            <div class="comts_container">
-                                                <p class="comments_title">评论区： </p>
-                                                <input type="text" class="inp_cont" id="inp_cont" >
-                                                <input type="submit" class="sub_cont" value="发表" onclick="sub_click()">
-                                                <div class="cont_item">
-                                                    <ul class="cont_ul" id="cont_ul">
-                                                        <li class="cont_info">评论：德云八队，一统江湖！</li>
-                                                        <li class="cont_info">评论：九力好可爱啊，我看到他就想起他的卖药糖哈哈哈</li>
-                                                        <li class="cont_info">评论：这两个小姐姐是谁啊</li>
+                                            <div class="cook_list" >
+                                                <div class="travel_item">
+                                                    <div class="co_face">
+                                                        <img src="../static/images/face.jpg" class="face_img">
+                                                    </div>
+                                                    <ul class="co_ul">
+                                                        <li class="co_name"><strong >Winkyyy98</strong></li>
+                                                        <li class="co_time">2020-05-21 14：03：56</li>
+                                                        <li class="co_info">521春游鸭</li>
+                                                        <li class="co_info">p1 人们都在说可爱的黑天鹅，我却只能想到黑天鹅的外卖小哥</li>
+                                                        <li class="co_info">p2 路边的小花，洁白而充满生命力</li>
+                                                        <li class="travel_pic">
+                                                            <img src="../static/images/blackswan.jpg" class="co_img">
+                                                            <img src="../static/images/flower.jpg" class="co_img">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="travel_item">
+                                                    <div class="co_face">
+                                                        <img src="../static/images/face.jpg" class="face_img">
+                                                    </div>
+                                                    <ul class="co_ul">
+                                                        <li class="co_name"><strong >Winkyyy98</strong></li>
+                                                        <li class="co_time">2019-12-28 09：23：11</li>
+                                                        <li class="co_info">来一场说走就走的旅行</li>
+                                                        <li class="co_info">p1 到地铁站啦，前往机场等待中，冬天真是养膘的时候，那时候好胖啊，真是对得起我吃下的每一口肉</li>
+                                                        <li class="co_info">p2 坐上飞机啦，天朗气清</li>
+                                                        <li class="co_info">p3 天都黑了才走到目的地，还好我穿了羽绒服，不然得冷死我，不过也挺好，独自旅行就是感受意外里的小美好</li>
+                                                        <li class="travel_pic">
+                                                            <img src="../static/images/ready.jpg" class="co_img">
+                                                            <img src="../static/images/flying.jpg" class="co_img">
+                                                            <img src="../static/images/travel.jpg" class="co_img">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="travel_item">
+                                                    <div class="co_face">
+                                                        <img src="../static/images/face.jpg" class="face_img">
+                                                    </div>
+                                                    <ul class="co_ul">
+                                                        <li class="co_name"><strong >Winkyyy98</strong></li>
+                                                        <li class="co_time">2014-07-28 10：26：39</li>
+                                                        <li class="co_info">踏入地狱前最后的狂欢</li>
+                                                        <li class="co_info">p1 雕像同款 get!</li>
+                                                        <li class="co_info">p2 盛夏的海边，海风扑面（嗐，不会游泳只能站在海边感受）</li>
+                                                        <li class="travel_pic">
+                                                            <img src="../static/images/Amusepark.jpg" class="co_img">
+                                                            <img src="../static/images/sunsea.jpg" class="co_img">
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +144,7 @@
                     </div>
                 </div>
         </section>
-
+    
         <footer id="footer">
             <div class="container">
                 <div class="row_item">
@@ -122,18 +155,6 @@
                 </div>
             </div>
         </footer>
-        <!-- js placed at the end of the document so the pages load faster -->
-        <script>
-            function sub_click(){
-                var input = document.getElementById('inp_cont');
-                var ul = document.getElementById('cont_ul');
-                var newLi = document.createElement('li');
-                newLi.innerHTML = "评论："+input.value;
-			    newLi.className = 'cont_info';
-                ul.appendChild(newLi);
-                input.value ="";
-                }
-        </script>
-        </body>
+     </body>
     </html>
     

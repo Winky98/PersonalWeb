@@ -1,0 +1,135 @@
+<DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:th="http://www.thymeleaf.org"
+          xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Winky的爱好">
+        <meta name="author" content="Winky">
+    
+        <title>Winky的爱好</title>
+    
+        <link href="../static/css/style.css" rel="stylesheet">       
+      </head>
+      <body>
+    
+      <section id="container" >
+          <!--header-->
+          <header class="black-bg">
+                <div class="header_bar">
+                    <img src="../static/images/bar.png" class="header_img">
+                    <a href="../index.html" class="header_text"><span>Winky's Personal space</span></a>
+                </div>
+          </header>
+    
+        <!--main content-->
+                    <div class="wrapper" id="container-1">
+                        <div class="inner">
+                            <div class="cont_1">
+                                <div class="cont_1-b">
+                                    <div class="cont_1-b-1">
+                                        <!--sidebar-->
+                                        <aside>
+                                            <div id="sidebar">
+                                                <!-- sidebar menu start-->
+                                                <ul class="sidebar-menu">
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./resume.html" >
+                                                                <img src="../static/images/resume.png" class="subimg">
+                                                                <span class="sub_span"><b>W planet</b></span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+    
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./interest.html" >
+                                                                <img src="../static/images/planet1.png" class="subimg">
+                                                                <span class="sub_span"><b>W Interests</b></span>
+                                                            </a>
+                                                        </div>
+    
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./Oneday.html">
+                                                                <img src="../static/images/planet2.png" class="subimg">
+                                                                <span class="sub_span"><b>W Oneday</b></span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+    
+                                                    <li class="sub">
+                                                        <div class="bar_item">
+                                                            <a href="./GNotes.html" >
+                                                                <img src="../static/images/planet3.png" class="subimg">
+                                                                <span class="sub_span"><b>W GNotes</b></span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                    <div class="cont_1-b-2">
+                                        <button class="returnbtn">
+                                            <a href="./interest.html">
+                                                <img src="../static/images/fanhui.png" alt="返回">
+                                            </a>
+                                        </button>
+                                        <div class="table_container">
+                                            <div>
+                                                <strong class="title">《不会在水下呼吸的男孩》</strong>
+                                            </div>
+                                         <!--video视频(mp4或webm格式) audio 音频(mp3格式) 用法基本一致
+                                        布尔属性：要么不写，写的话取值只能是属性本身controls:控制控件的显示，取值只能为controls,也可以不写取值
+                                        autoplay进入网页自动播放 muted静音播放 loop循环播放-->
+                                        <!-- <video autoplay muted loop  src="../static/video/好兆头第一季-01.mp4" controls="controls" style="margin: 30px;"></video>    -->
+                                        <video autoplay muted loop  src="../static/video/不会在水下呼吸的男孩.mp4" controls="controls" >
+                                        </video> 
+                                        <div class="comts_container">
+                                            <p class="comments_title">评论区： </p>
+                                            <input type="text" class="inp_cont" id="inp_cont" >
+                                            <input type="submit" class="sub_cont" value="发表" onclick="sub_click()">
+                                            <div class="cont_item">
+                                                <ul class="cont_ul" id="cont_ul">
+                                                    <li class="cont_info">评论：呜呜呜，Isak是什么小天使！！</li>
+                                                    <li class="cont_info">评论：Even好撩啊啊啊啊，北欧撩神！</li>
+                                                    <li class="cont_info">评论：Esak真的太甜了，我慕了</li>
+                                                </ul>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row_item">
+                    <div class="footer-info">
+                        <p>我说今晚月光那么美</p>
+                        <p>© Winky's Personal space</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- js placed at the end of the document so the pages load faster -->
+        <script>
+            function sub_click(){
+                var input = document.getElementById('inp_cont');
+                var ul = document.getElementById('cont_ul');
+                var newLi = document.createElement('li');
+                newLi.innerHTML = "评论："+input.value;
+			    newLi.className = 'cont_info';
+                ul.appendChild(newLi);
+                input.value ="";
+                }
+        </script>
+        </body>
+    </html>
